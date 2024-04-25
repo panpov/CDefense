@@ -1,0 +1,18 @@
+# Prerequisites
+*.d
+*.o
+
+# Executables
+*.exe
+*.out
+*.app
+
+# 102-specific files
+.DS_Store/*
+.DS_Store/*/*
+.devcontainer/*
+.vscode/*
+.vscode/*/*
+CMakeFiles/*
+CMakeFiles/*/*
+*.cmake
