@@ -13,4 +13,13 @@ Prof. Helmuth setup the repository:
 
 ## April 26
 
-Your first entry should go here (or earlier if you start earlier).
+Initial idea: NCurses Tyrian
+- Two modes: random / levels
+- Save file to keep track of general stats (unlocked ships, enemies destroyed, etc.)
+- Features: level editor (import/export), adjustable difficulty, mini bosses, different ships, power ups
+
+Brett and I want to implement a fun game for this final project. The game we have been thinking about is Tyrian, a retro vertically-scrolling shoot-em-up game. Though we do not have much experience implementing C++ programs that utilize graphics, we still want it to be visually appealing yet simple. To this end, we will utilize the NCurses library.
+
+We would like to implement what we think are the main features of not just Tyrian but a typical vertically-scrolling shoot-em-up game, including past-paced gameplay involving mini bosses, power ups, and progressive difficulty. Two of the data structures we plan on using are queues (for power up selection) and vectors (for waves of enemies). We will definitely be using templated classes for power ups, types of ships, mini bosses, and types of enemies. Since we will be dealing with damage and health systems in this project, we will have many ways to utilize operators for our classes. We are not yet sure what data structure we are going to use to represent a level of the game (what enemies will show up, when, where, etc). One way we will have the program write to or read from files is through player save files, which will keep track of general statistics and unlocked items. The other, perhaps more interesting, way is for the program to be able to export a randomly generated level file, which players can edit, perhaps to make more or less challenging, as well as import it for players to complete.
+
+The game will probably be silent, unless we decide to make use of a sound library.
