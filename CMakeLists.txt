@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.17)
 project(project09)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -11,5 +11,5 @@ set_property(TARGET ncurses PROPERTY
 
 include_directories(BEFORE SYSTEM ./ncurses-6.2/myinstall/include)
 
-add_executable(ncurses_test ncurses_test.cpp)
-target_link_libraries(ncurses_test ncurses)
+add_executable(main main.cc)
+target_link_libraries(main ncurses)
