@@ -9,17 +9,12 @@
  */
 class Game_Window {
 private:
-    WINDOW * game_window;
+    WINDOW * _game_window;
+    int _height;
+    int _width;
     
 public:
-    Game_Window(/* args */);
-    ~Game_Window();
+    Game_Window();
 };
-
-Game_Window::Game_Window(/* args */) {
-}
-
-Game_Window::~Game_Window() {
-}
 
 #endif
