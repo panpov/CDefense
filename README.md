@@ -31,3 +31,9 @@ The game will probably be silent, unless we decide to make use of a sound librar
 Today, we started small by learning more about Ncurses. We watched some videos from the [Making Snake in ncurses playlist by Casual Coder on Youtube]([url](https://www.youtube.com/playlist?list=PL2U2TQ__OrQ_TV2-wuHqGaK8qlnxgKUvK)). Then we started thinking about we wanted our game to look. Since it is a vertically scrolling game, we want the game to be taller than it is wide. We also want our window to be able to resize itself to some extent, so that it looks nice on any machine it runs on, instead of just looking nice on my (Pan) computer. We have done some calculations in our main.cc file for this as well as started playing around with the Ncurses functions for windows. Tomorrow, we plan on moving the code we have written for our game windows into a dedicated file and start designing its methods.
 
 - Pan and Brett
+
+## April 28
+
+Today, we set up our codebase together and found out how to collaborate our code. We experimented with LiveShare but decided just to keep up to date by pushing and pulling from the repository. We also got the ncurses window to automatically resize based on the size of the terminal. If the terminal is too small, an error message occurs causing the game to fail to start. Additionally, we began working on the Player class and plan to use inheritance for the enemy classes. More specifically, there will be a parent enemy class and there will be subclasses of enemies with different behaviors. Some objects in the game are destructible and will be treated as enemies but with zero movement attributes. There are a lot of questions to think about going forward. Namely, How do we set the player as the thing ncruses is moving around and how do we detect when a projectile hits the player or hits an enemy? (Maybe some kind of hitbox and detection system but it would have to be constantly checking for a collision, no?).
+
+- Pan and Brett
