@@ -11,5 +11,10 @@ set_property(TARGET ncurses PROPERTY
 
 include_directories(BEFORE SYSTEM ./ncurses-6.2/myinstall/include)
 
-add_executable(main main.cc)
+add_executable(
+    main
+    main.cc
+    ./classes/Game_Window.cc
+    ./classes/Game.cc
+)
 target_link_libraries(main ncurses)

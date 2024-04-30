@@ -1,24 +1,51 @@
 #include "Game_Window.h"
 
 Game_Window::Game_Window() {
-    int max_y, max_x;
-    getmaxyx(stdscr, max_y, max_x);
-
-    _height = max_y - (max_y % 5);
+    getmaxyx(stdscr, _max_y, _max_x);
+    _height = _max_y - (_max_y % 5);
     _width = _height * (float(2) / 3);
-    _width -= _width % 5;
+    // _width *= 2.25; // make wider
+}
 
-    WINDOW * game_window = newwin(_height, _width, ((max_y / 2 ) - (_height / 2)), ((max_x / 2) - (_width / 2)));
-    box(game_window, 0, 0);
-    wrefresh(game_window);    
+bool Game_Window::init(bool window_details) {
+    if (_height < MIN_HEIGHT) {
+        std::cout << "Your window is too small. (Minimum window height: " << MIN_HEIGHT;
+        std::cout << ". Your window height: " << _height << ")" << std::endl;
+        return false;
+    }
 
-    move((max_y / 2) - 10, (max_x / 2) + 10);
-    printw("%d", max_y);
-    move((max_y / 2) + 10, (max_x / 2) + 10);
-    printw("%d", _height);
+    // Window details
+    if (window_details) {
+        printw("Max y: %d", _max_y);
+        mvprintw(1, 0, "Max x: %d", _max_x);
+        mvprintw(2, 0, "Height: %d", _height);
+        mvprintw(3, 0, "Width: %d", _width);
+    }
 
-    move((max_y / 2) - 10, (max_x / 2) - 10);
-    printw("%d", max_x);
-    move((max_y / 2) + 10, (max_x / 2) - 10);
-    printw("%d", _width);
+    _game_window = newwin(_height, _width, ((_max_y / 2 ) - (_height / 2)), ((_max_x / 2) - (_width / 2)));
+    clear();
+    refresh();
+
+    return true;
+}
+
+void Game_Window::add_border() {
+    box(_game_window, 0, 0);
+}
+
+void Game_Window::clear() {
+    wclear(_game_window);
+    add_border();
+}
+
+void Game_Window::refresh() {
+    wrefresh(_game_window);    
+}
+
+void Game_Window::add_at(int y, int x, chtype character) {
+    mvwaddch(_game_window, y, x, character);
+}
+
+chtype Game_Window::get_input() {
+    return wgetch(_game_window);
 }
