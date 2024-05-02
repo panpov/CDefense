@@ -2,27 +2,16 @@
 
 Game_Window::Game_Window() {
     getmaxyx(stdscr, _max_y, _max_x);
-    _height = _max_y - (_max_y % 5);
-    _width = _height * (float(2) / 3);
-    // _width *= 2.25; // make wider
 }
 
-bool Game_Window::init(bool window_details) {
-    if (_height < MIN_HEIGHT) {
-        std::cout << "Your window is too small. (Minimum window height: " << MIN_HEIGHT;
-        std::cout << ". Your window height: " << _height << ")" << std::endl;
+bool Game_Window::init() {
+    if (_max_y < HEIGHT) {
+        std::cout << "Your window is too small. (Minimum window height: " << HEIGHT;
+        std::cout << ". Your window height: " << _max_y << ")" << std::endl;
         return false;
     }
 
-    // Window details
-    if (window_details) {
-        printw("Max y: %d", _max_y);
-        mvprintw(1, 0, "Max x: %d", _max_x);
-        mvprintw(2, 0, "Height: %d", _height);
-        mvprintw(3, 0, "Width: %d", _width);
-    }
-
-    _game_window = newwin(_height, _width, ((_max_y / 2 ) - (_height / 2)), ((_max_x / 2) - (_width / 2)));
+    _game_window = newwin(HEIGHT, WIDTH, ((_max_y / 2 ) - (HEIGHT / 2)), ((_max_x / 2) - (WIDTH / 2)));
     clear();
     refresh();
 
@@ -42,10 +31,18 @@ void Game_Window::refresh() {
     wrefresh(_game_window);    
 }
 
-void Game_Window::add_at(int y, int x, chtype character) {
-    mvwaddch(_game_window, y, x, character);
+void Game_Window::get_spaces(int & y, int & x) {
+    while ((mvwinch(_game_window, y = rand() % HEIGHT, x = rand() % WIDTH)) != ' ');
 }
 
 chtype Game_Window::get_input() {
     return wgetch(_game_window);
+}
+
+void Game_Window::add_at(int y, int x, chtype character) {
+    mvwaddch(_game_window, y, x, character);
+}
+
+void Game_Window::add(Drawable drawable) {
+    add_at(drawable.gety(), drawable.getx(), drawable.get_icon());
 }

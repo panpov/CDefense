@@ -3,19 +3,18 @@
 
 // May not be necessary
 #include <ncurses.h>
+#include "Drawable.h"
 
-// Concerns and uncertainties:
-// How do we set the player as the thing ncruses is moving around?
-// How do we detect when a projectile hits the player? Hitboxes?
-// 
-class Player {
+#define HEALTH 5
+
+class Player : public Drawable {
 public:
-    Player();
-    ~Player();
+    Player(int y, int x);
     void boost_health();
     void boost_damage();
     void boost_defense();
-    
+    void move(int new_x, int new_y);
+    void draw();
 
 private:
     int _health;

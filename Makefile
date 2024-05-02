@@ -129,6 +129,78 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+classes/Drawable.o: classes/Drawable.cc.o
+.PHONY : classes/Drawable.o
+
+# target to build an object file
+classes/Drawable.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Drawable.cc.o
+.PHONY : classes/Drawable.cc.o
+
+classes/Drawable.i: classes/Drawable.cc.i
+.PHONY : classes/Drawable.i
+
+# target to preprocess a source file
+classes/Drawable.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Drawable.cc.i
+.PHONY : classes/Drawable.cc.i
+
+classes/Drawable.s: classes/Drawable.cc.s
+.PHONY : classes/Drawable.s
+
+# target to generate assembly for a file
+classes/Drawable.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Drawable.cc.s
+.PHONY : classes/Drawable.cc.s
+
+classes/Game.o: classes/Game.cc.o
+.PHONY : classes/Game.o
+
+# target to build an object file
+classes/Game.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Game.cc.o
+.PHONY : classes/Game.cc.o
+
+classes/Game.i: classes/Game.cc.i
+.PHONY : classes/Game.i
+
+# target to preprocess a source file
+classes/Game.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Game.cc.i
+.PHONY : classes/Game.cc.i
+
+classes/Game.s: classes/Game.cc.s
+.PHONY : classes/Game.s
+
+# target to generate assembly for a file
+classes/Game.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Game.cc.s
+.PHONY : classes/Game.cc.s
+
+classes/Game_Window.o: classes/Game_Window.cc.o
+.PHONY : classes/Game_Window.o
+
+# target to build an object file
+classes/Game_Window.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Game_Window.cc.o
+.PHONY : classes/Game_Window.cc.o
+
+classes/Game_Window.i: classes/Game_Window.cc.i
+.PHONY : classes/Game_Window.i
+
+# target to preprocess a source file
+classes/Game_Window.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Game_Window.cc.i
+.PHONY : classes/Game_Window.cc.i
+
+classes/Game_Window.s: classes/Game_Window.cc.s
+.PHONY : classes/Game_Window.s
+
+# target to generate assembly for a file
+classes/Game_Window.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Game_Window.cc.s
+.PHONY : classes/Game_Window.cc.s
+
 main.o: main.cc.o
 .PHONY : main.o
 
@@ -162,6 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... classes/Drawable.o"
+	@echo "... classes/Drawable.i"
+	@echo "... classes/Drawable.s"
+	@echo "... classes/Game.o"
+	@echo "... classes/Game.i"
+	@echo "... classes/Game.s"
+	@echo "... classes/Game_Window.o"
+	@echo "... classes/Game_Window.i"
+	@echo "... classes/Game_Window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
