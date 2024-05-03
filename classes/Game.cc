@@ -1,9 +1,12 @@
 #include "Game.h"
 
 Game::Game() {
-    _window.init();
     _game_over = false;
     srand(time(NULL));
+}
+
+bool Game::valid_window() {
+    return _window.init();
 }
 
 void Game::get_input() {
@@ -12,7 +15,9 @@ void Game::get_input() {
 
 void Game::update() {
     int y, x;
-    _window.get_spaces(y, x);
+    _window.get_top_spaces(y, x);
+    _window.add(Drawable(y, x, 'X'));
+    _window.add(_player);
 }
 
 void Game::refresh() {

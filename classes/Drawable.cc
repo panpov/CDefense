@@ -6,17 +6,17 @@ Drawable::Drawable() {
 }
 
 Drawable::Drawable(int y, int x, chtype ch) {
-    _x = x;
     _y = y;
+    _x = x;
     _icon = ch;
-}
-
-int Drawable::getx() {
-    return _x;
 }
 
 int Drawable::gety() {
     return _y;
+}
+
+int Drawable::getx() {
+    return _x;
 }
 
 chtype Drawable::get_icon() {

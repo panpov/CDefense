@@ -6,7 +6,7 @@
 #include "Drawable.h"
 
 #define HEIGHT 40
-#define WIDTH 30 * 2.25
+#define WIDTH 76
 
 /**
  * @brief 
@@ -24,6 +24,7 @@ public:
     void clear();
     void refresh();
     void get_spaces(int & y, int & x);
+    void get_top_spaces(int & y, int & x);
     chtype get_input();
     void add_at(int y, int x, chtype character);
     void add(Drawable drawable);

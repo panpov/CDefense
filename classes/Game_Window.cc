@@ -11,6 +11,11 @@ bool Game_Window::init() {
         return false;
     }
 
+    printw("Max y: %d | Max y / 2 : %d", _max_y, _max_y / 2);
+    mvprintw(1, 0, "Max x: %d", _max_x);
+    mvprintw(2, 0, "Height: %d | Top left y: %d", HEIGHT, ((_max_y / 2 ) - (HEIGHT / 2)));
+    mvprintw(3, 0, "Width: %d", WIDTH);
+
     _game_window = newwin(HEIGHT, WIDTH, ((_max_y / 2 ) - (HEIGHT / 2)), ((_max_x / 2) - (WIDTH / 2)));
     clear();
     refresh();
@@ -33,6 +38,10 @@ void Game_Window::refresh() {
 
 void Game_Window::get_spaces(int & y, int & x) {
     while ((mvwinch(_game_window, y = rand() % HEIGHT, x = rand() % WIDTH)) != ' ');
+}
+
+void Game_Window::get_top_spaces(int & y, int & x) {
+    while ((mvwinch(_game_window, y = 1, x = rand() % WIDTH)) != ' ');
 }
 
 chtype Game_Window::get_input() {
