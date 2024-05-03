@@ -13,10 +13,7 @@
 #include "./classes/Game_Window.h"
 #include "./classes/Game.h"
 #include "./classes/Drawable.h"
-#include "./classes/Player_Class.h"
-
-#define WINDOW_WIDTH 30 * 2.25
-#define WINDOW_HEIGHT 45
+#include "./classes/Player.h"
 
 int main() {
     initscr();
@@ -24,13 +21,14 @@ int main() {
 
     Game game;
 
-    while (!game.game_over())
-    {
-        // game.get_input();
-        getch();
-        game.update();
-        game.refresh();
-    }
+    if (game.valid_window())
+        while (!game.game_over()) {
+            // game.get_input();
+            getch();
+            // ship.draw();
+            game.update();
+            game.refresh();
+        }
     
     getch();
     endwin();

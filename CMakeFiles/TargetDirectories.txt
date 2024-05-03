@@ -1,0 +1,3 @@
+/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/CMakeFiles/main.dir
+/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/CMakeFiles/edit_cache.dir
+/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/CMakeFiles/rebuild_cache.dir
