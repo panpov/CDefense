@@ -73,3 +73,9 @@ What we did today:
 - Other things we should tackle soon are level generation, representation of that as a data structure (probably vector), export to / import as a file, and operators for our classes.
 
 -- Pan and Brett
+
+## May 3
+
+Today, we updated the get_input() method in the Game class so that it actually processes inputs from the user and changes the operation of the game in some way. The main use for this is controlling the game. Player movement has been added, but is buggy. The game displays the player's icon at all the places it has been placed it does not get rid of the player's previous appearance on the screen. This should be easy to fix. We will rework the add_at() and add() methods of the Game_Window class so that it prints Drawable objects instead of adding them to the window. This weekend, we will refine player movement and work on the gameplay.
+
+-- Pan and Brett
