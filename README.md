@@ -79,3 +79,10 @@ What we did today:
 Today, we updated the get_input() method in the Game class so that it actually processes inputs from the user and changes the operation of the game in some way. The main use for this is controlling the game. Player movement has been added, but is buggy. The game displays the player's icon at all the places it has been placed it does not get rid of the player's previous appearance on the screen. This should be easy to fix. We will rework the add_at() and add() methods of the Game_Window class so that it prints Drawable objects instead of adding them to the window. This weekend, we will refine player movement and work on the gameplay.
 
 -- Pan and Brett
+
+## May 4
+
+- Player movement has been fixed by placing a space at previous position.
+- Corner detection for Drawables have been added.
+- A draft of move_drawable() has been added. This is supposed to place a space at the Drawable's previous position and update it to the new position. It is currently not working as intended. There might be a problem with the refresh and update functions.
+- An Enemy class has been created and we are currently looking at how to move them individually but still keep track of all of them.
