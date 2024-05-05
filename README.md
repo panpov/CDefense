@@ -83,6 +83,6 @@ Today, we updated the get_input() method in the Game class so that it actually p
 ## May 4
 
 - Player movement has been fixed by placing a space at previous position.
-- Corner detection for Drawables have been added.
+- Corner detection for Drawables has been added.
 - A draft of move_drawable() has been added. This is supposed to place a space at the Drawable's previous position and update it to the new position. It is currently not working as intended. There might be a problem with the refresh and update functions.
 - An Enemy class has been created and we are currently looking at how to move them individually but still keep track of all of them.

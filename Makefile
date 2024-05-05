@@ -225,29 +225,29 @@ classes/Game_Window.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Game_Window.cc.s
 .PHONY : classes/Game_Window.cc.s
 
-classes/Player_Class.o: classes/Player_Class.cc.o
-.PHONY : classes/Player_Class.o
+classes/Player.o: classes/Player.cc.o
+.PHONY : classes/Player.o
 
 # target to build an object file
-classes/Player_Class.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Player_Class.cc.o
-.PHONY : classes/Player_Class.cc.o
+classes/Player.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Player.cc.o
+.PHONY : classes/Player.cc.o
 
-classes/Player_Class.i: classes/Player_Class.cc.i
-.PHONY : classes/Player_Class.i
+classes/Player.i: classes/Player.cc.i
+.PHONY : classes/Player.i
 
 # target to preprocess a source file
-classes/Player_Class.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Player_Class.cc.i
-.PHONY : classes/Player_Class.cc.i
+classes/Player.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Player.cc.i
+.PHONY : classes/Player.cc.i
 
-classes/Player_Class.s: classes/Player_Class.cc.s
-.PHONY : classes/Player_Class.s
+classes/Player.s: classes/Player.cc.s
+.PHONY : classes/Player.s
 
 # target to generate assembly for a file
-classes/Player_Class.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Player_Class.cc.s
-.PHONY : classes/Player_Class.cc.s
+classes/Player.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/classes/Player.cc.s
+.PHONY : classes/Player.cc.s
 
 main.o: main.cc.o
 .PHONY : main.o
@@ -294,9 +294,9 @@ help:
 	@echo "... classes/Game_Window.o"
 	@echo "... classes/Game_Window.i"
 	@echo "... classes/Game_Window.s"
-	@echo "... classes/Player_Class.o"
-	@echo "... classes/Player_Class.i"
-	@echo "... classes/Player_Class.s"
+	@echo "... classes/Player.o"
+	@echo "... classes/Player.i"
+	@echo "... classes/Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

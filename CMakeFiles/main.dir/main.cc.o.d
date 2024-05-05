@@ -150,6 +150,6 @@ CMakeFiles/main.dir/main.cc.o: \
  /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/./classes/Game.h \
  /usr/include/c++/11/stdlib.h \
  /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/./classes/Game_Window.h \
- /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/./classes/Player_Class.h \
+ /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/./classes/Player.h \
  /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/./classes/Drawable.h \
- /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/./classes/Player_Class.h
+ /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/./classes/Player.h

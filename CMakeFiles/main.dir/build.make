@@ -139,19 +139,19 @@ CMakeFiles/main.dir/classes/Empty.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/classes/Empty.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Empty.cc -o CMakeFiles/main.dir/classes/Empty.cc.s
 
-CMakeFiles/main.dir/classes/Player_Class.cc.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/classes/Player_Class.cc.o: classes/Player_Class.cc
-CMakeFiles/main.dir/classes/Player_Class.cc.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/classes/Player_Class.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/classes/Player_Class.cc.o -MF CMakeFiles/main.dir/classes/Player_Class.cc.o.d -o CMakeFiles/main.dir/classes/Player_Class.cc.o -c /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player_Class.cc
+CMakeFiles/main.dir/classes/Player.cc.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/classes/Player.cc.o: classes/Player.cc
+CMakeFiles/main.dir/classes/Player.cc.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/classes/Player.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/classes/Player.cc.o -MF CMakeFiles/main.dir/classes/Player.cc.o.d -o CMakeFiles/main.dir/classes/Player.cc.o -c /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player.cc
 
-CMakeFiles/main.dir/classes/Player_Class.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/classes/Player_Class.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player_Class.cc > CMakeFiles/main.dir/classes/Player_Class.cc.i
+CMakeFiles/main.dir/classes/Player.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/classes/Player.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player.cc > CMakeFiles/main.dir/classes/Player.cc.i
 
-CMakeFiles/main.dir/classes/Player_Class.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/classes/Player_Class.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player_Class.cc -o CMakeFiles/main.dir/classes/Player_Class.cc.s
+CMakeFiles/main.dir/classes/Player.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/classes/Player.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player.cc -o CMakeFiles/main.dir/classes/Player.cc.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -160,7 +160,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/classes/Game.cc.o" \
 "CMakeFiles/main.dir/classes/Drawable.cc.o" \
 "CMakeFiles/main.dir/classes/Empty.cc.o" \
-"CMakeFiles/main.dir/classes/Player_Class.cc.o"
+"CMakeFiles/main.dir/classes/Player.cc.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -170,7 +170,7 @@ main: CMakeFiles/main.dir/classes/Game_Window.cc.o
 main: CMakeFiles/main.dir/classes/Game.cc.o
 main: CMakeFiles/main.dir/classes/Drawable.cc.o
 main: CMakeFiles/main.dir/classes/Empty.cc.o
-main: CMakeFiles/main.dir/classes/Player_Class.cc.o
+main: CMakeFiles/main.dir/classes/Player.cc.o
 main: CMakeFiles/main.dir/build.make
 main: ./ncurses-6.2/myinstall/lib/libncurses.a
 main: CMakeFiles/main.dir/link.txt

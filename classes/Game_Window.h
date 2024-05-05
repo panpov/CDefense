@@ -23,11 +23,14 @@ public:
     void add_border();
     void clear();
     void refresh();
+    void print(int y, int x, std::string str);
+    WINDOW * get_window();
     void get_spaces(int & y, int & x);
     void get_top_spaces(int & y, int & x);
     chtype get_input();
-    void add_at(int y, int x, chtype character);
+    void add_at(int y, int x, char character);
     void add(Drawable drawable);
+    
 };
 
 #endif // GAME_WINDOW

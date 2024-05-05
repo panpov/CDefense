@@ -16,15 +16,47 @@
 #include "./classes/Player.h"
 
 int main() {
+    // Menu screen code
+    // initscr();
+    // refresh();
+    // Game_Window menu;
+    // mvwprintw(menu.get_window(), 10, 10, "------------TESTING BRETT AND PAN--------------");
+    // // menu.clear();
+    // getch();
+    // endwin();
+    
+
+    // Window initialization
     initscr();
     refresh();
 
+    noecho();
+    curs_set(0);
+
+    Game_Window menu;
+
+    menu.init();
+
+    menu.print(20, 28, "Brett on the Pan Game");
+
+    menu.refresh();
+
+    getch();
+    endwin();
+
+    initscr();
+    refresh();
+
+    noecho();
+    curs_set(0);
+
     Game game;
 
-    if (game.valid_window())
+    // Main game loop
+    if (game.init())
         while (!game.game_over()) {
-            // game.get_input();
-            getch();
+            game.get_input();
+            // getch();
             // ship.draw();
             game.update();
             game.refresh();

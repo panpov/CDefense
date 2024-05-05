@@ -16,10 +16,11 @@ private:
 
 public:
     Game();
-    bool valid_window();
+    bool init();
     void get_input();
     void update();
     void refresh();
+    void move_drawable(Drawable drawable, int delta_y, int delta_x);
     bool game_over();
 };
 

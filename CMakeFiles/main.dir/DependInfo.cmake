@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Empty.cc" "CMakeFiles/main.dir/classes/Empty.cc.o" "gcc" "CMakeFiles/main.dir/classes/Empty.cc.o.d"
   "/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Game.cc" "CMakeFiles/main.dir/classes/Game.cc.o" "gcc" "CMakeFiles/main.dir/classes/Game.cc.o.d"
   "/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Game_Window.cc" "CMakeFiles/main.dir/classes/Game_Window.cc.o" "gcc" "CMakeFiles/main.dir/classes/Game_Window.cc.o.d"
-  "/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player_Class.cc" "CMakeFiles/main.dir/classes/Player_Class.cc.o" "gcc" "CMakeFiles/main.dir/classes/Player_Class.cc.o.d"
+  "/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player.cc" "CMakeFiles/main.dir/classes/Player.cc.o" "gcc" "CMakeFiles/main.dir/classes/Player.cc.o.d"
   "/workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/main.cc" "CMakeFiles/main.dir/main.cc.o" "gcc" "CMakeFiles/main.dir/main.cc.o.d"
   )
 

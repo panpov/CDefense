@@ -11,12 +11,11 @@ bool Game_Window::init() {
         return false;
     }
 
-    printw("Max y: %d | Max y / 2 : %d", _max_y, _max_y / 2);
-    mvprintw(1, 0, "Max x: %d", _max_x);
-    mvprintw(2, 0, "Height: %d | Top left y: %d", HEIGHT, ((_max_y / 2 ) - (HEIGHT / 2)));
-    mvprintw(3, 0, "Width: %d", WIDTH);
-
     _game_window = newwin(HEIGHT, WIDTH, ((_max_y / 2 ) - (HEIGHT / 2)), ((_max_x / 2) - (WIDTH / 2)));
+    
+    wtimeout(_game_window, 1000);
+    keypad(_game_window, true);
+
     clear();
     refresh();
 
@@ -36,22 +35,30 @@ void Game_Window::refresh() {
     wrefresh(_game_window);    
 }
 
-void Game_Window::get_spaces(int & y, int & x) {
-    while ((mvwinch(_game_window, y = rand() % HEIGHT, x = rand() % WIDTH)) != ' ');
+WINDOW * Game_Window::get_window() {
+    return _game_window;
+}
+
+// void Game_Window::get_spaces(int & y, int & x) {
+//     while ((mvwinch(_game_window, y = rand() % HEIGHT, x = rand() % WIDTH)) != ' ');
+// }
+
+chtype Game_Window::get_input() {
+    return wgetch(_game_window);
 }
 
 void Game_Window::get_top_spaces(int & y, int & x) {
     while ((mvwinch(_game_window, y = 1, x = rand() % WIDTH)) != ' ');
 }
 
-chtype Game_Window::get_input() {
-    return wgetch(_game_window);
-}
-
-void Game_Window::add_at(int y, int x, chtype character) {
-    mvwaddch(_game_window, y, x, character);
+void Game_Window::add_at(int y, int x, char character) {
+    mvwprintw(_game_window, y, x, "%c", character);
 }
 
 void Game_Window::add(Drawable drawable) {
     add_at(drawable.gety(), drawable.getx(), drawable.get_icon());
+}
+
+void Game_Window::print(int y, int x, std::string str) {
+    mvwprintw(_game_window, y, x, "%s", str.data());
 }

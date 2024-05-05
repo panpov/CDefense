@@ -152,4 +152,4 @@ CMakeFiles/main.dir/classes/Game.cc.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Drawable.h \
- /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player_Class.h
+ /workspaces/Lab/Projects/project-9-final-project-bread-on-the-pan/classes/Player.h
