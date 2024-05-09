@@ -1,6 +1,8 @@
 # CS 102 Final Project
 
 For this project, I am requiring a "Diary"; see the project for more details. I've included one example entry.
+## NOTE
+We had a lot of issues with Github pushing and pulling that caused some overriding and weirdness in our Github changes. All of our progress is catalogued here in the correct order, but it may not say so on Github. We talked to Prof. Helmuth & James Frazier about this and they said it's fine.
 
 # Diary Entries
 
@@ -86,3 +88,54 @@ Today, we updated the get_input() method in the Game class so that it actually p
 - Corner detection for Drawables has been added.
 - A draft of move_drawable() has been added. This is supposed to place a space at the Drawable's previous position and update it to the new position. It is currently not working as intended. There might be a problem with the refresh and update functions.
 - An Enemy class has been created and we are currently looking at how to move them individually but still keep track of all of them.
+
+-- Pan and Brett
+
+## May 5
+
+- Added a menu system that includes the title screen that has difficulty options and a pause menu that freezes the window and can be activated with 'p'.
+- Added documentation for all functions
+- Added more comments
+- Added Entity class to be a parent of player and enemy classes
+- Updated Drawable's move function to be consolidated into one function
+- We are going to change the premise of our game a bit. We're hoping to have enemies that pathfind the player. The main mechanic will either be shooting or maze running, we're not sure yet.
+
+-- Pan and Brett
+
+## May 6
+
+- Enemy now has a pathfinding method. This still has to be refined.
+- Game Window's get_input() method has been updated so that every time a player presses a key, the enemy does not also move. To achieve this, we watched tutorial 13 from the Making Snake in NCurses playlist. We will review how the code works so we can explain it in our comments.
+- Entity now has a get_speed() method for easier access.
+- We have started designing mazes. Our next task is to figure out how to have our game read them in.
+- We are beginning to design how the game ends and how enemies will catch the player.
+
+-- Pan and Brett
+
+## May 7
+
+- The premise of our game is back to the original: simplified Tyrian.
+- Enemy pathfinding has been refined.
+- We have added a shoot function. Any enemy that is hit by the laser dies.
+- Spawning multiple enemies has been handled with vectors.
+- Borders of the game window has been changed. Top side is made up of 'v' and bottom side is made up of '-'.
+- Damage detection has been added. If an enemy goes beyond the bottom of the screen or hits the player, the player's heath points decrease by one.
+- The game now ends if the player's health points are 0.
+- Miscellaneous get functions have been added for the Entity class.
+- A draft of the level read functionality has been implemented. This still has to be refined.
+
+-- Pan and Brett
+
+## May 8
+
+The project is complete, Yay!!
+
+To complete the project, we implemented the following changes today:
+- Fixed all memory leaks
+- Added powerups and implemented an operator to add them to a player
+- Powerups: Large beam and health bonus
+- Finished the read_waves() function. Making levels is very modular and easy for players too.
+- Made game run slightly smoother
+- Polished documentation
+
+-- Pan and Brett

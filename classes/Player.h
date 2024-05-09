@@ -1,24 +1,25 @@
-#ifndef PLAYER
-#define PLAYER
+#ifndef PLAYER_H
+#define PLAYER_H
 
-// May not be necessary
-#include <ncurses.h>
 #include "Game_Window.h"
 #include "Drawable.h"
+#include "Entity.h"
 
-#define STARTING_HEALTH 5
+#define INIT_HP 5
+#define INIT_SPD 1
+#define PLAYER_ICON 'A'
 
-class Player : public Drawable {
+class Player : public Entity {
 public:
     Player();
-    void boost_health();
-    void boost_damage();
-    void boost_defense();
+    Player(int health, int speed);
     
+    bool is_empowered();
+    void empower(int duration);
+
 private:
-    int _health;
-    int _speed;
-    int _damage_output;
+    bool _empowered;
+    int _empowered_duration;
 };
 
-#endif // PLAYER
+#endif // PLAYER_H

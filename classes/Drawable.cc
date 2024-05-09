@@ -1,52 +1,50 @@
 #include "Drawable.h"
 
+/**
+* @brief Creates a default Drawable object
+*/
 Drawable::Drawable() {
     _x = _y = 0;
     _icon = ' ';
 }
 
+/**
+* @brief Creates a Drawable object with specified starting coordinated and icon
+*/
 Drawable::Drawable(int y, int x, chtype ch) {
     _y = y;
     _x = x;
     _icon = ch;
 }
 
+/**
+* @brief Returns y coordinate of the Drawable
+* @return _y the y int of the Drawable
+*/
 int Drawable::gety() {
     return _y;
 }
 
+/**
+* @brief Returns x coordinate of the Drawable
+* @return _x the x int of the Drawable
+*/
 int Drawable::getx() {
     return _x;
 }
 
+/**
+* @brief Returns the icon of the Drawable object
+* @return _icon the char representation of the Drawable
+*/
 char Drawable::get_icon() {
     return _icon;
 }
 
-std::string Drawable::at_edge(WINDOW * window) {
-    int max_y, max_x;
-    getmaxyx(window, max_y, max_x);
-
-    std::string edges = "";
-
-    if (_y == 1)
-        edges += 'u';
-    if (_x == 1)
-        edges += 'l';
-    if (_y == max_y - 2)
-        edges += 'd';
-    if (_x == max_x - 2)
-        edges += 'r';
-
-    return edges;
-}
-
 /**
- * @brief Changes position of Drawable by delta_x and delta_y
- * @param delta_x The new x position of Drawable
- * @param delta_y The new y position of Drawable
+* @brief Updates the icon of the Drawable object
+* @param new_icon the updated icon for the Drawable
 */
-void Drawable::move(int delta_y, int delta_x) {
-    _y += delta_y;
-    _x += delta_x;
+void Drawable::set_icon(chtype new_icon) {
+    _icon = new_icon;
 }

@@ -17,8 +17,11 @@ add_executable(
     ./classes/Game_Window.cc
     ./classes/Game.cc
     ./classes/Drawable.cc
-    ./classes/Empty.cc
+    ./classes/Entity.cc
     ./classes/Player.cc
+    ./classes/Enemy.cc
+    ./classes/Power_up.cc
+    ./classes/Time.cc
 )
 
 target_link_libraries(main ncurses)
