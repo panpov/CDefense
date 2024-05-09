@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/main.dir/main.cc.o CMakeFiles/main.dir/classes/Game_Window.cc.o CMakeFiles/main.dir/classes/Game.cc.o CMakeFiles/main.dir/classes/Drawable.cc.o CMakeFiles/main.dir/classes/Empty.cc.o CMakeFiles/main.dir/classes/Player.cc.o -o main  ./ncurses-6.2/myinstall/lib/libncurses.a 
