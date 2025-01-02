@@ -10,7 +10,7 @@ CDefense is a wave-based shooter game made with Ncurses. It was by Brett Hajdaj 
   - These levels are essentially .txt files, that have *n* + 1 lines, where *n* is the number of waves of enemies. The first line of the .txt file is just *n*. Then, there are by *n* lines that are 74-characters long (2 characters less than the width of the game window). For the *x*th line, if the *y*th character is the 'w' character, then an enemy will be spawned on the *y*th column in the game.
  
 ## Build Instructions
-Make sure you have ncurses installed. If you do not have it installed and are using Ubuntu, you can type the following in your terminal:
+Make sure you have Ncurses installed. If you do not have it installed and are using Ubuntu, you can type the following in your terminal:
 ```
 sudo apt-get install libncurses-dev
 ```
@@ -18,4 +18,8 @@ To make the game, simply use CMake:
 ```
 cmake ./
 make
+```
+To run (assuming you are in the directory of the game), do:
+```
+./main
 ```
