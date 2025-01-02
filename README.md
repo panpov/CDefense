@@ -1,5 +1,5 @@
 # CDefense
-CDefense is a wave-based shooter game made with Ncurses. It was by Brett Hajdaj and Pan Pov as their final project for CPSCI-102 in the Spring of 2024 at Hamilton College.
+CDefense is a wave-based shooter game made with Ncurses. It was made by Brett Hajdaj and Pan Pov as their final project for CPSCI-102 in the Spring of 2024 at Hamilton College.
 
 ## Gameplay
 - The player (represented as 'A') moves with the arrow or WASD keys and shoot lasers with X key. The game can be paused with the P key. Enemies are represented as 'W'.
