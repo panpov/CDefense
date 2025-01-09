@@ -323,15 +323,15 @@ void Game::victory() {
 */
 void Game::load_level() {
     if (_difficulty == '1') {
-        _level.open("./levels/hard.txt", std::ios::in | std::ios::out);
+        _level.open("../levels/hard.txt", std::ios::in | std::ios::out);
         _enemy_speed = HARD_SPEED;
     }
     else if (_difficulty == '2') {
-        _level.open("./levels/medium.txt", std::ios::in | std::ios::out);
+        _level.open("../levels/medium.txt", std::ios::in | std::ios::out);
         _enemy_speed = MED_SPEED;
     }
     else {
-        _level.open("./levels/easy.txt", std::ios::in | std::ios::out);
+        _level.open("../levels/easy.txt", std::ios::in | std::ios::out);
         _enemy_speed = EASY_SPEED;
     }
    
