@@ -2,8 +2,8 @@
 CDefense is a wave-based shooter game made with ncurses. It was made by Brett Hajdaj and Pan Pov as their final project for CPSCI-102 in the Spring of 2024 at Hamilton College.
 
 <p align="center">
-  <img src="https://github.com/panpov/CDefense/blob/main/images/titlescreen.png" width="420" alt="game preview">
-  <img src="https://github.com/panpov/CDefense/blob/main/images/preview.png" width="420" alt="title screen">
+  <img src="https://github.com/panpov/CDefense/blob/main/images/titlescreen.png" width="400" alt="game preview">
+  <img src="https://github.com/panpov/CDefense/blob/main/images/preview.png" width="400" alt="title screen">
 </p>
 
 ## Gameplay and Features
