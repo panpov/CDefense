@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 add_compile_options(-Wall -Wextra -Werror=all -g)
 
 add_executable(
-    main
+    cdefense
     main.cc
     ./classes/Game_Window.cc
     ./classes/Game.cc
@@ -18,4 +18,4 @@ add_executable(
     ./classes/Time.cc
 )
 
-target_link_libraries(main ncurses)
+target_link_libraries(cdefense ncurses)
