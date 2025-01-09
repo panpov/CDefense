@@ -145,15 +145,17 @@ chtype Game_Window::menu() {
     // Main menu strings  
     std::string hard = "Press 1 for hard mode.", medium = "Press 2 for medium mode.";
     std::string easy = "Press any other key for easy mode.", title = "<- CDefense ->";
-    std::string pan_pov = "Pan  Pov", b_haj = "Brett Hajdaj";
+    std::string pan_pov = " Pan Pov", b_haj = "Brett Hajdaj";
+    std::string controls = "Move: WASD or Arrow Keys, Shoot: X, Pause: P";
 
     // Print the menu strings
-    print((HEIGHT / 4), (WIDTH / 2) - (title.size() / 2), title);
-    print((HEIGHT / 3), (WIDTH / 2) - (pan_pov.size() / 2) - 1, pan_pov);
-    print((HEIGHT / 2.5), (WIDTH / 2) - (b_haj.size() / 2), b_haj);
-    print(HEIGHT - (HEIGHT / 4), (WIDTH / 2) - (hard.size() / 2), hard);
-    print(HEIGHT - (HEIGHT / 5), (WIDTH / 2) - (medium.size() / 2), medium);
-    print(HEIGHT - (HEIGHT / 6), (WIDTH / 2) - (easy.size() / 2), easy);
+    print(10, (WIDTH / 2) - (title.size() / 2), title);
+    print(14, (WIDTH / 2) - (pan_pov.size() / 2) - 1, pan_pov);
+    print(16, (WIDTH / 2) - (b_haj.size() / 2), b_haj);
+    print(28, (WIDTH / 2) - (hard.size() / 2), hard);
+    print(30, (WIDTH / 2) - (medium.size() / 2), medium);
+    print(32, (WIDTH / 2) - (easy.size() / 2), easy);
+    print(34, (WIDTH / 2) - (controls.size() / 2), controls);
 
     // Pauses at the menu until a character is pushed, then clears menu from the window
     refresh();
