@@ -13,6 +13,6 @@
 .devcontainer/*
 .vscode/*
 .vscode/*/*
-CMakeFiles/*
-CMakeFiles/*/*
+build
+CMakeFiles
 *.cmake
