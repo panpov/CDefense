@@ -2,16 +2,10 @@
 CDefense is a wave-based shooter game made with ncurses. It was made by Brett Hajdaj and Pan Pov as their final project for CPSCI-102 in the Spring of 2024 at Hamilton College.
 
 <p align="center">
-  <img src="https://github.com/panpov/CDefense/blob/main/images/titlescreen.png" width="400" alt="game preview">
-  <img src="https://github.com/panpov/CDefense/blob/main/images/preview.png" width="400" alt="title screen">
+  <img src="https://github.com/panpov/CDefense/blob/main/gameplay.gif" width="450" alt="game preview">
 </p>
 
 ## Gameplay and Features
-
-<p align="center">
-  <img src="https://github.com/panpov/CDefense/blob/main/images/winscreen.png" width="400" alt="win screen">
-</p>
-
 - The player (represented as 'A') moves with the arrow or WASD keys and shoot lasers with X key. The game can be paused with the P key. Enemies are represented as 'W'.
 - There are two powerups: health and empower, represented as 'H' and 'E' respectively.
   - The health powerup will increase the player's health by 1, while the empower powerup will make the player's lasers much larger for a brief period of time.
